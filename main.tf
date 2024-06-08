@@ -11,6 +11,7 @@ resource "azurerm_postgresql_flexible_server" "this" {
   geo_redundant_backup_enabled      = var.geo_redundant_backup_enabled
   point_in_time_restore_time_in_utc = var.point_in_time_restore_time_in_utc
   private_dns_zone_id               = var.private_dns_zone_id
+  public_network_access_enabled     = var.public_network_access_enabled
   replication_role                  = var.replication_role
   sku_name                          = var.sku_name
   source_server_id                  = var.source_server_id
